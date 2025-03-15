@@ -1,0 +1,225 @@
+body {
+	font-family: Montserrat, sans-serif;
+	background-color: #f5f5f5;
+	font-size: .925rem;
+	background-image: url(images/mount-mont-blanc-covered-snow-reflecting-water-evening-chamonix-france.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	min-height: 100dvh;
+	margin: 0;
+	display: flex;         
+    flex-direction: column;
+}
+
+.main-wrapper {
+    flex: 1; /* Zaberá dostupný priestor */
+    position: relative;
+    padding-bottom: 60px; /* Medzera pred footerom */
+}
+
+.navbar {
+	padding: 2rem;
+}
+
+.h-font {
+	font-family: Merienda, cursive;
+}
+
+.content {
+	display: flex;
+	margin: auto;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
+	min-height: calc(100vh - 200px); /* Zabráni prílišnému stlačeniu */
+}
+.content h1 {
+	font-size: 4.063rem;
+	font-weight: 400;
+}
+.content h1 span {
+	font-weight: 700;
+}
+.content h6 span {
+	display: inline-block;
+    transform: rotate(90deg);
+	margin: auto;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+
+
+.button-parent {
+	width: 150px;
+	height: 65px;
+	position: relative;
+}
+.button {
+	padding: 0;
+	margin: 0;
+	width: 150px;
+	height: 65px;
+	font-size: .86rem;
+	background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+	border-radius: 31px;
+	transition: .5s;
+	background: linear-gradient(to right, #0066ff, #FF32d6) border-box, #ffffff border-box;
+}
+.button::before {
+	content: '';
+	position: absolute;
+	top: 0; left: 0;
+	width: 150px;
+	height: 65px;
+	border-right: 2px solid black;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	transition: .5s;
+	border-radius: 31px;
+}
+.button:hover::before {
+	width: 100px;
+	left: 35%;
+	border-radius: 0;
+}
+.button:hover {
+	border-radius: 0;
+}
+.button span {
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: .5s;
+}
+.button:hover span {
+	left: 100px;
+	color: black
+}
+svg {
+	position: absolute;
+	top: 50%;
+	left: -10%;
+	transform: translate(45%, -50%);
+	stroke: #000000;
+	fill: transparent;
+	stroke-width: 10;
+	width: 50px; height: 50px;
+	stroke-dasharray: 4000;
+	transition: .9s ease-out;
+	stroke-dashoffset: -4000;
+}
+.button:hover svg {
+	stroke-dashoffset: 0;
+}
+
+
+form {
+	width: 90%;
+	max-width: 600px;
+	height: 65px;
+	margin: 10px auto 20px;;
+	align-items: center;
+	border-radius: 40px;
+	background: #fff;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+form input::placeholder {
+	font-size: 16px;
+}
+.top-row {
+  display: flex;           
+  width: 100%;
+  align-items: center;
+  justify-content: center; 
+}
+.top-row input {
+  flex: 1;                 
+  border: none;
+  outline: none;
+  padding: 20px 30px;
+  font-size: 16px;
+  background: transparent;
+  border-radius: 40px;
+}
+.top-row .btn {
+  border-radius: 40px;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #000;
+  color: #fff;
+}
+.bottom-row {
+  margin-top: 1rem;       
+  position: relative;
+}
+
+
+
+#notification {
+	display: none;
+	padding: 8px;
+	margin-top: 1rem;
+	border-radius: 5px;
+	font-weight: bold;
+	position: relative;
+}
+
+.success {
+	background-color: #4CAF50;
+	color: white;
+}
+
+.error {
+	background-color: #f44336;
+	color: white;
+}
+
+.kontakt {
+	margin-top: 1rem;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	text-align: center;
+}
+.kontakt a:link {
+	color: cyan;
+	background-color: transparent;
+}
+.kontakt a:hover {
+	color: magenta;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+footer {
+    margin-top: auto; /* Footer sa prilepí dole */
+    position: relative;
+    z-index: 2;
+}
+
+.marolabs {
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding-bottom: 2rem 0;
+}
