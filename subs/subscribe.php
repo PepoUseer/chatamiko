@@ -1,8 +1,8 @@
 <?php
 header('Content-Type: application/json');
 
-require __DIR__ . '/../private/db_connection.php';
-require __DIR__ . '/../private/recaptcha.php';
+require_once __DIR__ . '/../private/db_connection.php';
+require_once __DIR__ . '/../private/recaptcha.php';
 
 // Najprv overíme reCAPTCHA
 if (!verifyRecaptcha()) {

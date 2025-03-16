@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         let formData = new FormData(form);
 
-        fetch("/chatamiko/subs/subscribe.php", {
+        fetch("/api.php", {
             method: "POST",
             body: formData,
         })
