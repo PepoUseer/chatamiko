@@ -1,225 +1,154 @@
 body {
-	font-family: Montserrat, sans-serif;
-	background-color: #f5f5f5;
-	font-size: .925rem;
-	background-image: url(images/mount-mont-blanc-covered-snow-reflecting-water-evening-chamonix-france.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;
-	background-size: cover;
-	min-height: 100dvh;
-	margin: 0;
-	display: flex;         
-    flex-direction: column;
-}
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdf9ee;
+      margin: 0;
+      padding: 0;
+      color: #1c2b1f;
+    }
 
-.main-wrapper {
-    flex: 1; /* Zaberá dostupný priestor */
-    position: relative;
-    padding-bottom: 30px; /* Medzera pred footerom */
-}
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fffef9;
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+      border-radius: 12px;
+    }
 
-.navbar {
-	padding: 2rem;
-}
+    .logo {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
 
-.h-font {
-	font-family: Merienda, cursive;
-}
+    .logo img {
+      width: 180px;
+    }
 
-.content {
-	display: flex;
-	margin: auto;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	flex-direction: column;
-	color: white;
-	text-shadow: 2px 2px 4px #000000;
-	margin-top: 4rem;
-}
-.content h1 {
-	font-size: 4.063rem;
-	font-weight: 400;
-}
-.content h1 span {
-	font-weight: 700;
-}
-.content h6 span {
-	display: inline-block;
-    transform: rotate(90deg);
-	margin: auto;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-}
+    h1 {
+      text-align: center;
+      color: #2a442d;
+      margin-bottom: 10px;
+    }
 
+    .subtitle {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
 
+    .section {
+      margin-bottom: 25px;
+    }
 
-.button-parent {
-	width: 150px;
-	height: 65px;
-	position: relative;
-}
-.button {
-	padding: 0;
-	margin: 0;
-	width: 150px;
-	height: 65px;
-	font-size: .86rem;
-	background-color: transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-	border-radius: 31px;
-	transition: .5s;
-	background: linear-gradient(to right, #0066ff, #FF32d6) border-box, #ffffff border-box;
-}
-.button::before {
-	content: '';
-	position: absolute;
-	top: 0; left: 0;
-	width: 150px;
-	height: 65px;
-	border-right: 2px solid black;
-	border-top: 2px solid black;
-	border-bottom: 2px solid black;
-	transition: .5s;
-	border-radius: 31px;
-}
-.button:hover::before {
-	width: 100px;
-	left: 35%;
-	border-radius: 0;
-}
-.button:hover {
-	border-radius: 0;
-}
-.button span {
-	color: white;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	transition: .5s;
-}
-.button:hover span {
-	left: 100px;
-	color: black
-}
-svg {
-	position: absolute;
-	top: 50%;
-	left: -10%;
-	transform: translate(45%, -50%);
-	stroke: #000000;
-	fill: transparent;
-	stroke-width: 10;
-	width: 50px; height: 50px;
-	stroke-dasharray: 4000;
-	transition: .9s ease-out;
-	stroke-dashoffset: -4000;
-}
-.button:hover svg {
-	stroke-dashoffset: 0;
-}
+    .section h2 {
+      font-size: 1.2rem;
+      color: #2a442d;
+      border-bottom: 2px solid #cce0d0;
+      padding-bottom: 4px;
+    }
+
+	.section h2 i {
+		margin-right: 8px;
+		color: #2a442d;
+		vertical-align: middle;
+	}
+
+    ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+	ul li {
+		margin-bottom: 6px;
+	}
+
+	ul li strong {
+		color: #2a442d;
+  		font-weight: 700;
+	}
+
+    .contact {
+      font-weight: bold;
+    }
+
+    .contact a {
+      color: #2a442d;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+	.contact-box {
+		background: #f5f8f5;
+		border-left: 3px solid #2a442d;
+		padding: 1rem;
+		border-radius: 6px;
+		font-size: 0.95rem;
+	}
+
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+		gap: 10px;
+		margin-top: 10px;
+	}
+
+	.gallery img {
+		width: 100%;
+		border-radius: 6px;
+		object-fit: cover;
+		height: 120px;
+		box-shadow: 0 1px 6px rgba(0,0,0,0.15);
+		transition: transform 0.3s ease;
+	}
+
+	.gallery img:hover {
+		transform: scale(1.03);
+	}
 
 
-form {
-	width: 90%;
-	max-width: 600px;
-	height: 65px;
-	margin: 10px auto 20px;;
-	align-items: center;
-	border-radius: 40px;
-	background: #fff;
-	margin-top: 10px;
-	margin-bottom: 20px;
-	display: flex;
-	flex-direction: column;
-	box-sizing: border-box;
-}
-form input::placeholder {
-	font-size: 16px;
-}
-.top-row {
-  display: flex;           
-  width: 100%;
-  align-items: center;
-  justify-content: center; 
-}
-.top-row input {
-  flex: 1;                 
-  border: none;
-  outline: none;
-  padding: 20px 30px;
-  font-size: 16px;
-  background: transparent;
-  border-radius: 40px;
-}
-.top-row .btn {
-  border-radius: 40px;
-  border: none;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  background: #000;
-  color: #fff;
-}
-.bottom-row {
-  margin-top: 1rem;       
-  position: relative;
-}
+	.lokalita-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 2px solid #cce0d0;
+		padding-bottom: 4px;
+		margin-bottom: 0.5rem;
+	}
+
+	.lokalita .lokalita-header h2 {
+		border-bottom: none;
+		padding: 0;
+		margin: 15px 0 0 0;
+	}
+
+	.mapka-small {
+		position: relative;
+		width: 90px;
+		height: auto;
+		display: inline-block;
+		margin: 2px 10px 0 0;
+		line-height: 0;
+	}
+
+	.mapka-small img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	.circle-small {
+		position: absolute;
+		background-color: black;
+		width: .313rem;
+		height: .313rem;
+		border-radius: 50%;
+		top: 42%;   /* prispôsobiť podľa obrázka */
+		left: 48%;
+		transform: translate(-50%, -50%);
+	}
 
 
-
-#notification {
-	display: none;
-	padding: 8px;
-	margin-top: 1rem;
-	border-radius: 5px;
-	font-weight: bold;
-	position: relative;
-}
-
-.success {
-	background-color: #4CAF50;
-	color: white;
-}
-
-.error {
-	background-color: #f44336;
-	color: white;
-}
-
-.kontakt {
-	margin-top: 1rem;
-	justify-content: center;
-	align-items: center;
-	color: white;
-	text-align: center;
-}
-.kontakt a:link {
-	color: cyan;
-	background-color: transparent;
-}
-.kontakt a:hover {
-	color: magenta;
-	background-color: transparent;
-	text-decoration: none;
-}
-
-footer {
-    margin-top: auto; /* Footer sa prilepí dole */
-    position: relative;
-    z-index: 2;
-}
-
-.marolabs {
-	color: white;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	padding-bottom: 2rem 0;
-}

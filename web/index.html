@@ -1,68 +1,185 @@
 <!DOCTYPE html>
-<html lang="sk_SK">
+<html lang="sk">
 
 
 <head>
+	<!-- pre jazykové verzie -->
+	<link rel="alternate" href="https://chatamiko.sk/" hreflang="sk">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-PJYECMHBM2"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+
+  		gtag('config', 'G-PJYECMHBM2');
+	</script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- META základné SEO -->
+	<meta name="title" content="Chata MIKO – súkromný pobyt Krpáčovo Nízke Tatry">
+	<meta name="description" content="Súkromná chata na prenájom v tichej lokalite Krpáčovo Nízke Tatry. Výhodné ceny, krásna príroda, blízko Chopku. Pozrite si fotogalériu!">
+
+	<!-- Open Graph pre Facebook/LinkedIn -->
+	<meta property="og:title" content="Chata MIKO – súkromný pobyt Krpáčovo Nízke Tatry">
+	<meta property="og:description" content="Výhodný prenájom chaty v Krpáčove. Oddýchnite si v súkromí Nízkych Tatier. Pozrite si fotogalériu a rezervujte si chatu MIKO v krásnom Krpáčove. Vhodné pre rodiny, turistov a milovníkov prírody.">
+	<meta property="og:image" content="https://chatamiko.sk/images/chatamiko.jpeg"> <!-- nahraď za správnu URL -->
+	<meta property="og:url" content="https://chatamiko.sk/">
+	<meta property="og:type" content="website">
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Chata MIKO – súkromný pobyt Krpáčovo Nízke Tatry">
+	<meta name="twitter:description" content="Súkromná horská chata v Krpáčove. Výhodné ceny, ticho a príroda Nízkych Tatier.">
+	<meta name="twitter:image" content="https://chatamiko.sk/images/chataamiko.jpeg">
+	<meta name="keywords" content="chata Krpáčovo, súkromné ubytovanie, chata Nízke Tatry, chata Chopok, dovolenka Krpáčovo, prenájom chaty, horská chata Krpáčovo, chata, lacné ubytovanie, lacná chata, akcia chata, chata Miko, chata MIKO, chata 7 lôžok, ubytovanie 7, Nízke Tatry lacné ubytovanie, Nízke Tatry chata, chata v súkromí, chata v lese, súkromná chata, chata 8,4 Eur na osobu, Chata Tále, chata Chopok, zľava chata, chata Riavka">
+
+	<meta name="robots" content="index, follow">
+
+	<link rel="canonical" href="https://chatamiko.sk/">
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "LodgingBusiness",
+			"name": "Chata MIKO",
+			"description": "Súkromná horská chata v Krpáčove, Nízke Tatry. Kapacita 6+1 osôb. Výhodný prenájom chaty. Súkromie v Nízkych Tatrách. Krásna príroda, blízko Chopku. Tichá lokalita.",
+			"address": {
+				"@type": "PostalAddress",
+				"addressCountry": "SK",
+				"addressLocality": "Krpáčovo",
+				"addressRegion": "Banskobystrický kraj"
+			},
+			"url": "https://chatamiko.sk",
+			"telephone": "+421911551214"
+		}
+	</script>
+
+
 	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
 	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" defer></script>
+	<!-- Lightbox2 JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" defer></script>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 	<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<!-- Lightbox2 CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 	<link rel="stylesheet" href="style.css">
-	<!--<link rel="stylesheet" type="text/css" href="../node_modules/font-awesome/css/font-awesome.css">-->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-	<link rel="icon" type="image.jpeg" href="images/chatamiko.jpeg">
+	<link rel="icon" type="image/jpeg" href="./images/chatamiko.jpeg">
 	<title>Chata Miko - Krpáčovo Nízke Tatry</title>
 </head>
 
 <body>
 
-	<div class="main-wrapper">
-		<header>
-			<div class="navbar">
-				<a class="navbar-brand me-5 fw-bold fs-1 h-font" href="/"> <img src="images/chata.png" alt="Chata Miko" width="250" class="d-inline-block align-text-center" /></a>
-			</div>
-		</header>
+  <div class="container">
+    <div class="logo">
+      <img src="./images/chata.png" alt="Chata Miko logo" loading="lazy">
+    </div>
 
-		<main>
-			<div class="content">
-				<h1>Naša stránka sa pripravuje <span>na sezónu</span> 🌺</h1>
-				<h6><span>➔</span> Obdržte upozornenie keď bude stránka pripravená <span>➔</span></h6>
-				<form id="subscribeForm" method="POST" action="/subs/subscribe.php" autocomplete="on">
-					<div class="top-row">
-						<input type="email" name="email" autocomplete="email" placeholder="Zadajte svoj e-mail" required>
-						<div class="button-parent">
-							<button type="submit" class="button">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z"/></svg>
-								<span>Prihlásiť sa</span>
-							</button>
-						</div>
-					</div>
-					<div id="notification"></div>
-					<div class="bottom-row">
-						<div class="g-recaptcha" data-sitekey="6LfdHNEqAAAAACTQOlMzjoisAEiLy_VAx1tOoSxF"></div>
-					</div>
-					<div class="kontakt">
-						<p>Pre dotazy nás môžete kontaktovať na</p>
-						<p><a href="mailto:info@chatamiko.sk"><b>info@chatamiko.sk</b></a></p>
-					</div>
-				</form>
+    <h1>Chata MIKO</h1>
+    <div class="subtitle">Súkromný pobyt v Nízkych Tatrách</div>
+
+    <div class="section lokalita">
+		<div class="lokalita-header">
+			<h2><i class="fas fa-map-marker-alt"></i> Lokalita</h2>
+			<div class="mapka-small">
+				<a href="https://www.google.com/maps/dir/?api=1&destination=48.874487952438855,19.56959091219171" target="_blank" title="Ukáž na mape">
+					<img src="./images/mapa_slovenska.png" alt="Mapa" loading="lazy">
+				</a>
+				<div class="circle-small"></div>
 			</div>
-		</main>
+		</div>
+		<p>Nachádza sa v pokojnej chatovej osade Krpáčovo, blízko obľúbenej rekreačnej oblasti Tále a Chopok.</p>
 	</div>
-	
-	<footer>
-		<p class="marolabs">Powered by MaroBLabs made with &nbsp;<i class="fa fa-heart" style="font-size:0.6var;color:red"></i>&nbsp; © 2025 </p>
-	</footer>
-	<script src="main.js" defer></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
+    <div class="section">
+      <h2><i class="fas fa-euro-sign"></i> Cena a podmienky pobytu</h2>
+      <ul>
+        <li><strong>59 €/noc</strong> za celú chatu (pri rezervácii na 7 nocí)</li>
+        <li><strong>3 noci len za 225 €</strong></li>
+        <li>Elektrina: <strong>0,60 €/kWh</strong> (priemerne 10 €/noc)</li>
+        <li>Rekreačný poplatok: <strong>1 €/osoba/deň</strong> (deti neplatia)</li>
+        <li>Zvieratká nie sú povolené</li>
+      </ul>
+    </div>
+
+	<div class="section">
+		<h2><i class="fas fa-images"></i> Fotogaléria</h2>
+		<div class="gallery">
+			<a href="./images/chata1.jpg" data-lightbox="chata">
+				<img src="./images/chata1.jpg" alt="Exteriér chaty MIKO Krpáčovo – výhľad od ohniska v Nízkych Tatrách" loading="lazy">
+			</a>
+			<a href="./images/chata2.jpg" data-lightbox="chata">
+				<img src="./images/chata2.jpg" alt="Chata MIKO v Krpáčove – zadný pohľad na ubytovanie v Nízkych Tatrách" loading="lazy">
+			</a>
+			<a href="./images/chata3.jpg" data-lightbox="chata">
+				<img src="./images/chata3.jpg" alt="Chata MIKO Krpáčovo – súkromná horská chata s výhľadom" loading="lazy">
+			</a>
+			<a href="./images/chata4.jpg" data-lightbox="chata">
+				<img src="./images/chata4.jpg" alt="Altánok pri chate MIKO – ubytovanie Krpáčovo s posedením v altánku" loading="lazy">
+			</a>
+			<a href="./images/chata5.jpg" data-lightbox="chata">
+				<img src="./images/chata5.jpg" alt="Bočný pohľad na altánok – Chata MIKO Krpáčovo Nízke Tatry" loading="lazy">
+			</a>
+			<a href="./images/chata6.jpg" data-lightbox="chata">
+				<img src="./images/chata6.jpg" alt="Obývačka v Chate MIKO – interiér súkromného ubytovania Krpáčovo" loading="lazy">
+			</a>
+			<a href="./images/chata7.jpg" data-lightbox="chata">
+				<img src="./images/chata7.jpg" alt="Chata MIKO – horská chata Krpáčovo s krbom a drevom" loading="lazy">
+			</a>
+			<a href="./images/chata8.jpg" data-lightbox="chata">
+				<img src="./images/chata8.jpg" alt="Kuchyňa v Chate MIKO – plne vybavená kuchyňa na chate v Nízkych Tatrách" loading="lazy">
+			</a>
+			<a href="./images/chata9.jpg" data-lightbox="chata">
+				<img src="./images/chata9.jpg" alt="Kúpeľňa v Chate MIKO – čisté a súkromné ubytovanie Krpáčovo" loading="lazy">
+			</a>
+			<a href="./images/chata10.jpg" data-lightbox="chata">
+				<img src="./images/chata10.jpg" alt="Spálňa v Chate MIKO – pohodlné lôžka na horskej chate v Krpáčove" loading="lazy">
+			</a>
+			<a href="./images/chata11.jpg" data-lightbox="chata">
+				<img src="./images/chata11.jpg" alt="Lôžková izba – Chata MIKO Krpáčovo pre 7 osôb" loading="lazy">
+			</a>
+			<a href="./images/chata12.jpg" data-lightbox="chata">
+				<img src="./images/chata12.jpg" alt="Hríby – dubáky z okolia Chaty MIKO v lese Krpáčovo" loading="lazy">
+			</a>
+		</div>
+	</div>
+
+	<div class="section">
+		<h2><i class="fas fa-star"></i> Prečo si vybrať nás?</h2>
+		<ul>
+			<li>Kompletné súkromie a veľký pozemok</li>
+			<li>Skvelá poloha pri Táloch a Chopku</li>
+			<li>Výborný pomer ceny a kvality</li>
+			<li>Domáca atmosféra s tradičným vybavením</li>
+		</ul>
+	</div>
+
+	<div class="section contact-box">
+      <h2><i class="fas fa-phone"></i> Kontaktujte nás</h2>
+      <p class="contact">
+        <strong>p. Kočtúchová</strong><br>
+        <a href="tel:+421911551214">+421 911 551 214</a><br>
+        <a href="mailto:info@chatamiko.sk">info@chatamiko.sk</a>
+      </p>
+    </div>
+
+    <div class="section">
+      <h2><i class="fas fa-calendar-alt"></i> Rezervácie čoskoro online!</h2>
+      <p>Pracujeme na spustení rezervačného systému s prihlasovaním.</p>
+    </div>
+
+	<footer style="text-align:center; font-size: 0.9em; margin-top: 40px; color: #777;">
+		© 2025 Chata Miko | Vytvorené s láskou <i class="fas fa-heart"></i> | Všetky práva vyhradené.
+	</footer>
+
+  </div>
 
 </body>
 

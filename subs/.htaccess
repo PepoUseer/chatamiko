@@ -1,0 +1,8 @@
+# Zakázanie prístupu k všetkému v priečinku subs
+Require all denied
+
+# Povolenie iba subscribe.php
+<Files "subscribe.php">
+    Require all granted
+    Allow from all
+</Files>

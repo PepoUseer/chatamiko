@@ -1,0 +1,14 @@
+RewriteEngine On
+
+# Presmeruj na index.html, ak súbor/adresár neexistuje a nie je to PHP
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !\.php$ [NC]
+RewriteRule ^ index.html [L]
+
+# Blokovanie prístupu k citlivým súborom
+
+<FilesMatch "(\.htaccess|\.env|db_connection\.php|recaptcha\.php)">
+Require all denied
+</FilesMatch>
