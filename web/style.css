@@ -150,3 +150,22 @@ ul li strong {
 	left: 48%;
 	transform: translate(-50%, -50%);
 }
+
+.aktivita-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.5rem;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 2rem;
+}
+
+.aktivita-grid li::before {
+  content: "🌲 ";
+  margin-right: 4px;
+}
+
+.chata-info h2, .chata-info h3 {
+  margin-top: 1.5rem;
+  color: #2e4830;
+}
