@@ -143,7 +143,9 @@
 			<br><br>
 			Počas Vášho pobytu je Vám k dispozícii obývacia miestnosť s krbovými kachľami a s pohodlnou rohovou pohovkou (na spanie ako dvojposteľová), televízorom so satelitným príjmom (slovenské, české aj zahraničné programy), DVD prehrávačom s mnohými filmami a koncertmi skupín na DVD, rádiom s CD prehrávačom.
 			<br><br>
-			Na prízemí sa tiež nachádza kuchynka s elektrickým varičom, rýchlovarnou kanvicou, mikrovlnnou rúrou, potrebným kompletným kuchynským vybavením, aj základnými surovinami. Prízemie dotvára chodbička, kde nájdete chladničku s mrazničkou a rovnako kúpeľňu so sprchovacím kútom a toaletou, kde sú dostupné aj čistiace prostriedky a čisté uteráky.
+			Na prízemí sa tiež nachádza 
+			<span id="dots">...</span>
+			<span id="more" style="display:none;">kuchynka s elektrickým varičom, rýchlovarnou kanvicou, mikrovlnnou rúrou, potrebným kompletným kuchynským vybavením, aj základnými surovinami. Prízemie dotvára chodbička, kde nájdete chladničku s mrazničkou a rovnako kúpeľňu so sprchovacím kútom a toaletou, kde sú dostupné aj čistiace prostriedky a čisté uteráky.
 			<br><br>
 			Drevenými schodmi sa presuniete na poschodie do spálni, kde na Vás čakajú štyri samostatné lôžka, jedno lôžko s prístelkou. Dve lôžka s prístelkou sú v pravej časti, dve lôžka v ľavej časti, ktorá je oddelená závesom. Tu využijete ďalší televízor so satelitným príjmom. Zo spálne, ale aj obývačky vedie vstup na terasu s pekným výhľadom na okolitý les.
 			<br><br>
@@ -152,6 +154,8 @@
 			Nádherná okolitá príroda Nízkych Tatier Vám ponúka zaujímavé turistické možnosti. Odporúčame Vám napríklad výstup k Horskému hotelu Srdiečko (9 km) odkiaľ sa vyveziete lanovkou priamo na Chopok. Obľúbenou trasou je tiež túra od Chopku na Ďumbier s dychberúcimi výhľadmi na celé okolie. Len 3 kilometre od ubytovania sa rozprestiera Prírodné kúpalisko Tále situované v Bystrej doline. Tu nájdete aj Golfové ihrisko Gray Bear Tále. Rovnako zaujímavý je výlet do Bystrianskej jaskyne, Jaskyne mŕtvych netopierov, jazda Čiernohronskou železničkou v Čiernom Balogu alebo návšteva Lesníckeho skanzenu vo Vydrovskej doline.
 			<br><br>
 			Už teraz sa na Vás tešíme!
+			</span>
+			<button onclick="toggleMore()" id="readMoreBtn">Zobraziť viac</button>
 		</p>
 	</section>
 
@@ -202,6 +206,24 @@
 	</footer>
 
   </div>
+
+  <script>
+	function toggleMore() {
+		var dots = document.getElementById("dots");
+		var more = document.getElementById("more");
+		var btn = document.getElementById("readMoreBtn");
+
+		if (more.style.display === "none") {
+		dots.style.display = "none";
+		more.style.display = "inline";
+		btn.textContent = "Zobraziť menej";
+		} else {
+		dots.style.display = "inline";
+		more.style.display = "none";
+		btn.textContent = "Zobraziť viac";
+		}
+	}
+  </script>
 
 </body>
 

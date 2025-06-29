@@ -90,7 +90,7 @@ ul li strong {
 }
 
 .gallery-header {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   width: 100%;
 }
 
@@ -240,4 +240,26 @@ ul li strong {
   .guick-facts {
 	justify-content: center
   }
+}
+
+@media (max-width: 600px) {
+  .quick-facts {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.95em;
+  }
+}
+
+
+#readMoreBtn {
+  background: none;
+  border: none;
+  color: #2a442d;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 5px;
+}
+#readMoreBtn:hover {
+  text-decoration: underline;
 }
