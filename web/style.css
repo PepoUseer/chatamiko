@@ -263,3 +263,112 @@ ul li strong {
 #readMoreBtn:hover {
   text-decoration: underline;
 }
+
+
+/* Prepínač vzhľadu */
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1000;
+  transition: color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  color: #555;
+}
+
+.theme-icon {
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:active .theme-icon {
+  transform: scale(1.2);
+}
+
+/* --- Animácia pre prepínanie témy --- */
+body, .container, .main-photo img, .thumbs img, .section, footer {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+
+/* DARK mód */
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #eeeeee;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .container {
+  background-color: #262626;
+  color: #eeeeee;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Nadpisy */
+body.dark-mode h1,
+body.dark-mode .subtitle,
+body.dark-mode .section h2,
+body.dark-mode .section h2 i {
+  color: #b2ffb2;
+}
+
+/* Sekcie a hrany */
+body.dark-mode .section {
+  border-color: #444;
+  transition: border-color 0.3s;
+}
+
+body.dark-mode hr {
+  border-color: #444;
+}
+
+/* Odkazy */
+body.dark-mode a,
+body.dark-mode .contact a {
+  color: #9fdc9f;
+  transition: color 0.3s;
+}
+
+/* Kontakt */
+body.dark-mode .contact-box {
+  background: #333333;
+  border-left: 3px solid #79b679;
+  color: #eeeeee;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Quick facts */
+body.dark-mode .quick-facts {
+  color: #cfcfcf;
+}
+
+body.dark-mode .quick-facts i {
+  color: #9fdc9f;
+}
+
+body.dark-mode strong {
+  color: #9fdc9f;
+}
+
+body.dark-mode #readMoreBtn {
+  color: #9fdc9f;
+}
+
+/* Galéria */
+body.dark-mode .thumb-overlay {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .main-photo img,
+body.dark-mode .thumbs img {
+  filter: brightness(0.9);
+  transition: filter 0.3s;
+}
+

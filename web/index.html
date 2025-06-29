@@ -82,6 +82,9 @@
       <img src="./images/chata.png" alt="Chata Miko logo" loading="lazy">
     </div>
 
+	<button id="theme-toggle" class="theme-toggle" aria-label="Prepnúť režim">
+	  <span class="theme-icon">🌙</span>
+	</button>
     <h1>Chata MIKO</h1>
     <div class="subtitle">Súkromný pobyt v Nízkych Tatrách</div>
 
@@ -223,6 +226,40 @@
 		btn.textContent = "Zobraziť viac";
 		}
 	}
+
+	document.addEventListener("DOMContentLoaded", function () {
+		const savedTheme = localStorage.getItem("theme");
+		const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+		const body = document.body;
+		const toggleBtn = document.getElementById("theme-toggle");
+		const iconSpan = toggleBtn.querySelector(".theme-icon");
+
+		function applyTheme(theme) {
+			if (theme === "dark") {
+				body.classList.add("dark-mode");
+				iconSpan.textContent = "☀️";
+			} else {
+				body.classList.remove("dark-mode");
+				iconSpan.textContent = "🌙";
+			}
+		}
+
+		// Nastavenie podľa localStorage alebo systému
+		if (savedTheme) {
+			applyTheme(savedTheme);
+		} else {
+			applyTheme(prefersDark ? "dark" : "light");
+		}
+
+		// Reagovanie na klik
+		toggleBtn.addEventListener("click", () => {
+			const isDark = body.classList.toggle("dark-mode");
+			const newTheme = isDark ? "dark" : "light";
+			localStorage.setItem("theme", newTheme);
+			iconSpan.textContent = isDark ? "☀️" : "🌙";
+		});
+	});
+
   </script>
 
 </body>
