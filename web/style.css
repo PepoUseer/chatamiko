@@ -253,19 +253,6 @@ ul li strong {
 }
 
 
-#readMoreBtn {
-  background: none;
-  border: none;
-  color: #2a442d;
-  font-weight: bold;
-  cursor: pointer;
-  margin-left: 5px;
-}
-#readMoreBtn:hover {
-  text-decoration: underline;
-}
-
-
 /* Prepínač vzhľadu */
 .theme-toggle {
   position: absolute;
@@ -356,15 +343,9 @@ body.dark-mode strong {
   color: #9fdc9f;
 }
 
-body.dark-mode #readMoreBtn {
+body.dark-mode #readMoreBtn,
+body.dark-mode #readLessBtn {
   color: #9fdc9f;
-}
-
-/* Galéria */
-body.dark-mode .thumb-overlay {
-  background-color: rgba(255, 255, 255, 0.2);
-  color: #ffffff;
-  transition: background-color 0.3s, color 0.3s;
 }
 
 body.dark-mode .main-photo img,
@@ -373,3 +354,33 @@ body.dark-mode .thumbs img {
   transition: filter 0.3s;
 }
 
+
+#moreContent, #moreContents {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.6s cubic-bezier(0.5,0,0.5,1), opacity 0.3s;
+  pointer-events: none;
+  margin-bottom: 0;
+  display: none;
+}
+
+#moreContent.expanded, #moreContents.expanded {
+  max-height: 2000px;
+  opacity: 1;
+  pointer-events: auto;
+  margin-bottom: 1rem;
+  display: inline;
+}
+
+#readMoreBtn, #readLessBtn {
+  background: none;
+  border: none;
+  color: #2a442d;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 8px;
+}
+#readMoreBtn:hover, #readLessBtn:hover {
+  text-decoration: underline;
+}
