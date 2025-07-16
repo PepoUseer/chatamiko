@@ -355,32 +355,50 @@ body.dark-mode .thumbs img {
 }
 
 
-#moreContent, #moreContents {
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
-  transition: max-height 0.6s cubic-bezier(0.5,0,0.5,1), opacity 0.3s;
-  pointer-events: none;
-  margin-bottom: 0;
+#moreContent {
   display: none;
 }
 
-#moreContent.expanded, #moreContents.expanded {
-  max-height: 2000px;
-  opacity: 1;
-  pointer-events: auto;
-  margin-bottom: 1rem;
+#moreContent.more-shown {
   display: inline;
+}
+
+#moreContents {
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition: height 0.5s cubic-bezier(0.5,0,0.5,1), opacity 0.3s;
+  display: none;
+}
+
+#moreContents.more-shown {
+  opacity: 1;
+  display: block;
 }
 
 #readMoreBtn, #readLessBtn {
   background: none;
   border: none;
-  color: #2a442d;
+  color: #57a057;
   font-weight: bold;
   cursor: pointer;
   margin-left: 8px;
+  font-size: inherit;
+  padding: 0;
+  vertical-align: baseline;
 }
+
 #readMoreBtn:hover, #readLessBtn:hover {
-  text-decoration: underline;
+  color: #246f2f;
+  text-shadow: 0 2px 8px #98e6a566, 0 0px 1px #fff;
+  text-decoration: none;
+}
+#readMoreBtn i, #readLessBtn i {
+  transition: transform 0.23s;
+}
+#readMoreBtn:hover i {
+  transform: translateY(3px) rotate(180deg);
+}
+#readLessBtn:hover i {
+  transform: translateY(-3px) rotate(180deg);
 }
