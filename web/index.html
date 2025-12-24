@@ -82,75 +82,104 @@
       <img src="./images/chata.png" alt="Chata Miko logo" loading="lazy">
     </div>
 
+	<button id="theme-toggle" class="theme-toggle" aria-label="Prepnúť režim">
+	  <span class="theme-icon">🌙</span>
+	</button>
     <h1>Chata MIKO</h1>
     <div class="subtitle">Súkromný pobyt v Nízkych Tatrách</div>
 
-    <div class="section lokalita">
-		<div class="lokalita-header">
-			<h2><i class="fas fa-map-marker-alt"></i> Lokalita</h2>
-			<div class="mapka-small">
-				<a href="https://www.google.com/maps/dir/?api=1&destination=48.874487952438855,19.56959091219171" target="_blank" title="Ukáž na mape">
-					<img src="./images/mapa_slovenska.png" alt="Mapa" loading="lazy">
-				</a>
-				<div class="circle-small"></div>
-			</div>
-		</div>
-		<p>Nachádza sa v pokojnej chatovej osade Krpáčovo, blízko obľúbenej rekreačnej oblasti Tále a Chopok.</p>
-	</div>
+	 <!-- GALÉRIA -->
+    <section class="gallery-header">
+      <div class="gallery-grid">
+        <div class="main-photo">
+          <a href="./images/chata1.jpg" data-lightbox="chata"><img src="./images/chata1.jpg" alt="Chata MIKO - Hlavný obrázok" loading="lazy"/></a>
+        </div>
+        <div class="thumbs">
+          <a href="./images/chata2.jpg" data-lightbox="chata"><img src="./images/chata2.jpg" alt="Chata MIKO - Obrázok 2" loading="lazy"/></a>
+          <a href="./images/chata3.jpg" data-lightbox="chata"><img src="./images/chata3.jpg" alt="Chata MIKO - Obrázok 3" loading="lazy"/></a>
+          <a href="./images/chata4.jpg" data-lightbox="chata"><img src="./images/chata4.jpg" alt="Chata MIKO - Obrázok 4" loading="lazy"/></a>
+		  <a href="./images/chata5.jpg" data-lightbox="chata" class="thumb-with-overlay">
+			<img src="./images/chata5.jpg" alt="Viac fotografií" loading="lazy"/>
+			<span class="thumb-overlay">+ 9 fotografií</span>
+		  </a>
+        </div>
+      </div>
 
+      <!-- Skryté obrázky -->
+      <div style="display: none;">
+        <a href="./images/chata6.jpg" data-lightbox="chata"></a>
+        <a href="./images/chata7.jpg" data-lightbox="chata"></a>
+        <a href="./images/chata8.jpg" data-lightbox="chata"></a>
+        <a href="./images/chata9.jpg" data-lightbox="chata"></a>
+        <a href="./images/chata10.jpg" data-lightbox="chata"></a>
+        <a href="./images/chata11.jpg" data-lightbox="chata"></a>
+        <a href="./images/chata12.jpg" data-lightbox="chata"></a>
+		<a href="./images/chata13.jpg" data-lightbox="chata"></a>
+		<a href="./images/chata14.jpg" data-lightbox="chata"></a>
+      </div>
+
+      <div class="quick-facts">
+        <div><i class="fas fa-users"></i> Max. 7 osôb</div>
+		<div><i class="fas fa-tree"></i> Súkromná chata uprostred lesa</div>
+        <div><i class="fas fa-bed"></i> 4 lôžka + 1 prístelka + 1 rozkladacia pohovka</div>
+        <div><i class="fas fa-paw"></i> Zvieratká nie sú povolené</div>
+      </div>
+    </section>
+
+	<!-- CENA A PODMIENKY -->
     <div class="section">
-      <h2><i class="fas fa-euro-sign"></i> Cena a podmienky pobytu</h2>
+      <h2><i class="fas fa-euro-sign"></i> Ceny</h2>
       <ul>
-        <li><strong>59 €/noc</strong> za celú chatu (pri rezervácii na 7 nocí)</li>
-        <li><strong>3 noci len za 225 €</strong></li>
-        <li>Elektrina: <strong>0,60 €/kWh</strong> (priemerne 10 €/noc)</li>
+        <li><strong>len 59 €/noc</strong> za celú chatu (pri rezervácii na 4 a viac nocí)</li>
+        <li><strong>3 noci za 225 €</strong></li>
+        <li>Elektrina: <strong>0,60 €/kWh</strong> (priemerne 10 €/pobyt)</li>
         <li>Rekreačný poplatok: <strong>1 €/osoba/deň</strong> (deti neplatia)</li>
-        <li>Zvieratká nie sú povolené</li>
+		<li><strong>Záloha</strong>: podľa dohody vopred na účet</li>
       </ul>
     </div>
 
-	<div class="section">
-		<h2><i class="fas fa-images"></i> Fotogaléria</h2>
-		<div class="gallery">
-			<a href="./images/chata1.jpg" data-lightbox="chata">
-				<img src="./images/chata1.jpg" alt="Exteriér chaty MIKO Krpáčovo – výhľad od ohniska v Nízkych Tatrách" loading="lazy">
-			</a>
-			<a href="./images/chata2.jpg" data-lightbox="chata">
-				<img src="./images/chata2.jpg" alt="Chata MIKO v Krpáčove – zadný pohľad na ubytovanie v Nízkych Tatrách" loading="lazy">
-			</a>
-			<a href="./images/chata3.jpg" data-lightbox="chata">
-				<img src="./images/chata3.jpg" alt="Chata MIKO Krpáčovo – súkromná horská chata s výhľadom" loading="lazy">
-			</a>
-			<a href="./images/chata4.jpg" data-lightbox="chata">
-				<img src="./images/chata4.jpg" alt="Altánok pri chate MIKO – ubytovanie Krpáčovo s posedením v altánku" loading="lazy">
-			</a>
-			<a href="./images/chata5.jpg" data-lightbox="chata">
-				<img src="./images/chata5.jpg" alt="Bočný pohľad na altánok – Chata MIKO Krpáčovo Nízke Tatry" loading="lazy">
-			</a>
-			<a href="./images/chata6.jpg" data-lightbox="chata">
-				<img src="./images/chata6.jpg" alt="Obývačka v Chate MIKO – interiér súkromného ubytovania Krpáčovo" loading="lazy">
-			</a>
-			<a href="./images/chata7.jpg" data-lightbox="chata">
-				<img src="./images/chata7.jpg" alt="Chata MIKO – horská chata Krpáčovo s krbom a drevom" loading="lazy">
-			</a>
-			<a href="./images/chata8.jpg" data-lightbox="chata">
-				<img src="./images/chata8.jpg" alt="Kuchyňa v Chate MIKO – plne vybavená kuchyňa na chate v Nízkych Tatrách" loading="lazy">
-			</a>
-			<a href="./images/chata9.jpg" data-lightbox="chata">
-				<img src="./images/chata9.jpg" alt="Kúpeľňa v Chate MIKO – čisté a súkromné ubytovanie Krpáčovo" loading="lazy">
-			</a>
-			<a href="./images/chata10.jpg" data-lightbox="chata">
-				<img src="./images/chata10.jpg" alt="Spálňa v Chate MIKO – pohodlné lôžka na horskej chate v Krpáčove" loading="lazy">
-			</a>
-			<a href="./images/chata11.jpg" data-lightbox="chata">
-				<img src="./images/chata11.jpg" alt="Lôžková izba – Chata MIKO Krpáčovo pre 7 osôb" loading="lazy">
-			</a>
-			<a href="./images/chata12.jpg" data-lightbox="chata">
-				<img src="./images/chata12.jpg" alt="Hríby – dubáky z okolia Chaty MIKO v lese Krpáčovo" loading="lazy">
-			</a>
+	<!-- O CHATE -->
+	<section class="chata-info section">
+		<h2><i class="fas fa-info-circle"></i> O chate MIKO</h2>
+		<p>
+			<strong>Chata Miko v Krpáčove</strong> Vás pozýva prežiť Vašu letnú dovolenku do pokojného prostredia rekreačného strediska <strong>Krpáčovo</strong>, neďaleko obce Dolná Lehota a strediska <strong>Tále</strong>.
+			<br><br>
+			Od apríla do októbra sú Vám dvere v našej chate otvorené. Ubytujeme rodinky, skupinky, páry i jednotlivcov. Celková kapacita je <strong>7 osôb</strong>.
+			<br><br>
+			Počas Vášho pobytu je Vám k dispozícii <strong>obývacia miestnosť s krbovými kachľami</strong> a pohodlnou rohovou pohovkou (na spanie ako dvojposteľová), <strong>televízor so satelitným príjmom</strong> (slovenské, české aj zahraničné programy), <strong>DVD prehrávač</strong> s filmami a koncertmi na DVD, rádio s CD prehrávačom.
+			<br><br>
+			Na prízemí sa tiež nachádza 
+			<span id="dots">...</span><button onclick="toggleMore()" id="readMoreBtn">Zobraziť viac <i class="fas fa-chevron-up"></i></button>
+			<span id="moreContent" class="more-hidden">
+				<strong>kuchynka</strong> s elektrickým varičom, rýchlovarnou kanvicou, mikrovlnnou rúrou, potrebným kompletným kuchynským vybavením aj základnými surovinami. Prízemie dotvára chodbička v ktorej sa nachádza <strong>chladnička s mrazničkou</strong> a <strong>kúpeľňa so sprchovacím kútom a toaletou</strong>, kde sú dostupné aj čistiace prostriedky a čisté uteráky.
+			</span>
+		</p>
+		<div id="moreContents" class="more-hidden">
+			Drevenými schodmi sa presuniete na poschodie do spálne, kde na Vás čakajú <strong>štyri samostatné lôžka</strong> (jedno lôžko s prístelkou). Dve lôžka s prístelkou sú v pravej časti, dve lôžka v ľavej časti, ktorá je oddelená závesom. K dispozícii je aj <strong>druhý televízor so satelitným príjmom</strong>. Zo spálne aj obývačky je vstup na <strong>terasu s pekným výhľadom na okolitý les</strong>.
+			<br><br>
+			Exteriér ponúka <strong>veľký altánok so záhradným krbom</strong>, ohnisko s posedením a priestor na dokonalý oddych. Pre bicykle je k dispozícii <strong>uzamykateľná kôlnička</strong>. Parkovanie je zabezpečené <strong>priamo pred chatou</strong>, prístup na parkovisko je uzavretý závorou. Objekt je zvonku chránený kamerovým systémom.
+			<br><br>
+			Nádherná príroda Nízkych Tatier ponúka množstvo nezabudnuteľných <strong>turistických zážitkov</strong>. Jedným z obľúbených výletov je výstup k <strong>Horskému hotelu Srdiečko</strong> (cca 9 km), odkiaľ sa pohodlne vyveziete lanovkou až na <strong>vrchol Chopku</strong>. Odtiaľ si môžete užiť jedinečnú túru až na <strong>Ďumbier</strong>, s dychberúcimi výhľadmi na celé okolie.
+			<br><br>
+			Len 2 km od našej chaty sa nachádza <strong>malebné jazero</strong>, ideálne na oddych v lone prírody. Iba 3 km od ubytovania leží <strong>prírodné kúpalisko Tále</strong> obklopené krásnou Bystrou dolinou. V tejto oblasti sa nachádza aj <strong>golfové ihrisko Gray Bear Tále</strong> a viacero <strong>wellness centier</strong>, kde si môžete dopriať zaslúžený relax a oddych po aktívnom dni.
+			<br><br>
+			Milovníkom prírody a dobrodružstva odporúčame navštíviť aj: 
+			<p>
+				<ul>
+					<li><strong>Bystriansku jaskyňu</strong></li>
+					<li>fascinujúcu <strong>Jaskyňu mŕtvych netopierov</strong></li>
+					<li>jazdu <strong>Čiernohronskou železničkou</strong> v Čiernom Balogu</li>
+					<li>či <strong>Lesnícky skanzen</strong> vo Vydrovskej doline</li>
+				</ul>
+			</p>
+			Nech už hľadáte pokoj v prírode, športové vyžitie alebo dobrodružstvo, v našom okolí si každý nájde to svoje.
+			<br><br>
+			Už teraz sa na Vás tešíme!
+			<button onclick="toggleMore()" id="readLessBtn" style="display:none;">Zobraziť menej <i class="fas fa-chevron-down"></i></button>
 		</div>
-	</div>
+	</section>
 
+	<!-- PREČO SI VYBRAŤ NÁS -->
 	<div class="section">
 		<h2><i class="fas fa-star"></i> Prečo si vybrať nás?</h2>
 		<ul>
@@ -161,6 +190,21 @@
 		</ul>
 	</div>
 
+	<!-- LOKALITA -->
+	<div class="section lokalita">
+		<div class="lokalita-header">
+			<h2><i class="fas fa-map-marker-alt"></i> Lokalita</h2>
+			<div class="mapka-small">
+				<a href="https://www.google.com/maps/place/Chata+Miko/@48.874428023163,19.569268783759,19z/data=!4m6!3m5!1s0x471571002123c92f:0xd9f8d7e48e71becd!8m2!3d48.8744019!4d19.5693266!16s%2Fg%2F11ybt7bhr8?entry=ttu&g_ep=EgoyMDI1MDYxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" title="Ukáž na mape">
+					<img src="./images/mapa_slovenska.png" alt="Mapa" loading="lazy">
+				</a>
+				<div class="circle-small"></div>
+			</div>
+		</div>
+		<p>Nachádza sa v pokojnej chatovej osade Krpáčovo, blízko obľúbenej rekreačnej oblasti Tále a Chopok.</p>
+	</div>
+
+	<!-- KONTAKT -->
 	<div class="section contact-box">
       <h2><i class="fas fa-phone"></i> Kontaktujte nás</h2>
       <p class="contact">
@@ -170,16 +214,20 @@
       </p>
     </div>
 
+	<!-- REZERVÁCIA -->
     <div class="section">
       <h2><i class="fas fa-calendar-alt"></i> Rezervácie čoskoro online!</h2>
       <p>Pracujeme na spustení rezervačného systému s prihlasovaním.</p>
     </div>
 
+	<!-- FOOTER -->
 	<footer style="text-align:center; font-size: 0.9em; margin-top: 40px; color: #777;">
 		© 2025 Chata Miko | Vytvorené s láskou <i class="fas fa-heart"></i> | Všetky práva vyhradené.
 	</footer>
 
   </div>
+
+  <script src="main.js" defer></script>
 
 </body>
 

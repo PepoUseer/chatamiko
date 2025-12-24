@@ -1,4 +1,88 @@
+function toggleMore() {
+    var dots = document.getElementById("dots");
+    var moreContent = document.getElementById("moreContent");
+    var moreContents = document.getElementById("moreContents");
+    var readMoreBtn = document.getElementById("readMoreBtn");
+    var readLessBtn = document.getElementById("readLessBtn");
+    var isExpanded = moreContent.classList.contains("more-shown");
+
+    if (!isExpanded) {
+        dots.style.display = "none";
+        moreContent.classList.add("more-shown");
+        readMoreBtn.style.display = "none";
+
+        moreContents.style.display = "block";
+        moreContents.style.overflow = "hidden";
+        moreContents.style.transition = "height 0.5s cubic-bezier(0.5,0,0.5,1), opacity 0.3s";
+        moreContents.style.height = "0px";
+        moreContents.style.opacity = "1";
+
+        moreContents.offsetHeight;
+
+        let scrollHeight = moreContents.scrollHeight + "px";
+        moreContents.style.height = scrollHeight;
+
+        setTimeout(() => {
+            moreContents.style.height = "auto";
+            moreContents.style.overflow = "visible";
+            readLessBtn.style.display = "inline-block";
+        }, 500);
+    } else {
+        dots.style.display = "inline";
+        moreContent.classList.remove("more-shown");
+        readMoreBtn.style.display = "inline-block";
+        readLessBtn.style.display = "none";
+
+        moreContents.style.overflow = "hidden";
+        moreContents.style.transition = "height 0.5s cubic-bezier(0.5,0,0.5,1), opacity 0.3s";
+        moreContents.style.height = moreContents.scrollHeight + "px";
+        moreContents.offsetHeight; 
+
+        moreContents.style.height = "0px";
+        moreContents.style.opacity = "1";
+
+        setTimeout(() => {
+            moreContents.style.display = "none";
+            moreContents.style.height = "0px";
+            moreContents.style.overflow = "hidden";
+        }, 500);
+    }
+}
+
 document.addEventListener("DOMContentLoaded", function () {
+    // Spracovanie prepínača témy
+    const savedTheme = localStorage.getItem("theme");
+		const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+		const body = document.body;
+		const toggleBtn = document.getElementById("theme-toggle");
+		const iconSpan = toggleBtn.querySelector(".theme-icon");
+
+		function applyTheme(theme) {
+			if (theme === "dark") {
+				body.classList.add("dark-mode");
+				iconSpan.textContent = "☀️";
+			} else {
+				body.classList.remove("dark-mode");
+				iconSpan.textContent = "🌙";
+			}
+		}
+
+		// Nastavenie podľa localStorage alebo systému
+		if (savedTheme) {
+			applyTheme(savedTheme);
+		} else {
+			applyTheme(prefersDark ? "dark" : "light");
+		}
+
+		toggleBtn.addEventListener("click", () => {
+			const isDark = body.classList.toggle("dark-mode");
+			const newTheme = isDark ? "dark" : "light";
+			localStorage.setItem("theme", newTheme);
+			iconSpan.textContent = isDark ? "☀️" : "🌙";
+        });
+    
+    
+    
     const form = document.getElementById("subscribeForm");
     const messageBox = document.getElementById("notification");
     let hideMessageTimeout = null;
